@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Appium cross-platform automation</title>
+  <desc id="description">One Appium WebDriver API connects a test script to Android, iOS, and Windows targets through platform drivers.</desc>
+  <rect width="1200" height="620" fill="#f5f7f2"/>
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="700" fill="#17251f">One WebDriver API, multiple platforms</text>
+  <text x="600" y="92" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#50645a">Appium keeps the test interface consistent while drivers handle platform details.</text>
+
+  <rect x="390" y="145" width="420" height="116" rx="12" fill="#1e5d52"/>
+  <text x="600" y="191" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#ffffff">Test script</text>
+  <text x="600" y="226" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#dcefe8">W3C WebDriver API</text>
+
+  <path d="M600 261 V320" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M600 320 H210 V382 M600 320 V382 M600 320 H990 V382" fill="none" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M210 372 l-12 18 h24 z M600 372 l-12 18 h24 z M990 372 l-12 18 h24 z" fill="#1e5d52"/>
+
+  <rect x="80" y="390" width="260" height="130" rx="12" fill="#dcefe8" stroke="#1e5d52" stroke-width="3"/>
+  <text x="210" y="437" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#17251f">Android</text>
+  <text x="210" y="474" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#50645a">UiAutomator2</text>
+  <text x="210" y="500" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">device or emulator</text>
+
+  <rect x="470" y="390" width="260" height="130" rx="12" fill="#e8e4f3" stroke="#4e477b" stroke-width="3"/>
+  <text x="600" y="437" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#282445">iOS</text>
+  <text x="600" y="474" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#4e477b">XCUITest</text>
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#4e477b">device or simulator</text>
+
+  <rect x="860" y="390" width="260" height="130" rx="12" fill="#f3e6ce" stroke="#9a6a2f" stroke-width="3"/>
+  <text x="990" y="437" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#4c351a">Windows</text>
+  <text x="990" y="474" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#80592b">platform driver</text>
+  <text x="990" y="500" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#80592b">supported target</text>
+
+  <text x="600" y="580" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">The exact driver and environment depend on the target platform.</text>
+</svg>
