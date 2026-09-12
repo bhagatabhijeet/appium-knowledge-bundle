@@ -10,6 +10,7 @@ Collect practical, structured knowledge for designing, configuring, running, and
 
 * [Introduction](introduction/) - Overview of Appium: what it is, how it works, supported languages, app types, advantages, tool comparisons, and limitations.
 * [Appium ecosystem and drivers](driver-ecosystem/) - The Appium ecosystem's categories, how a driver works, and the current official and community driver catalog.
+* [Appium Setup](appium-setup/) - Setup prerequisites, plus step-by-step setup for Windows and Mac.
 * Desired capabilities and session configuration
 * Locators and element interaction
 * Mobile gestures

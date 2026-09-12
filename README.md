@@ -30,6 +30,7 @@ This bundle follows the [Open Knowledge Format (OKF) v0.2](https://github.com/Go
 - `log.md`: chronological history of updates to the bundle
 - `introduction/`: the Introduction topic, one concept file per subtopic (what Appium is, supported languages, architecture, app types, advantages, tool comparison, limitations, references), plus its own `index.md`
 - `driver-ecosystem/`: the Appium ecosystem and drivers topic (ecosystem categories, how a driver works, the driver catalog), plus its own `index.md`
+- `appium-setup/`: the Appium Setup topic (prerequisites now; Windows and Mac setup steps planned), plus its own `index.md`
 - `assets/images/`: images used by knowledge topics
 - `assets/code/`: reusable reference code examples
 - `viz.html`: a self-contained, interactive graph viewer for this bundle — open it directly in a browser
@@ -37,7 +38,7 @@ This bundle follows the [Open Knowledge Format (OKF) v0.2](https://github.com/Go
 
 ## Status
 
-The Introduction and Appium ecosystem and drivers topics are complete. Remaining topics — desired capabilities, locators, gestures, test organization, troubleshooting, and reference material — are in progress; see [index.md](index.md) for the full topic map.
+The Introduction and Appium ecosystem and drivers topics are complete. Appium Setup has its prerequisites written; Windows- and Mac-specific setup steps are still to come. Other remaining topics — desired capabilities, locators, gestures, test organization, troubleshooting, and reference material — are also in progress; see [index.md](index.md) for the full topic map.
 
 ## Reference links
 

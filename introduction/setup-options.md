@@ -13,4 +13,4 @@ The machine running the Appium server (the host OS) determines which target plat
 - **Appium on Windows (or Linux)**: Can automate Android devices, but not iOS — there is no supported way to run the XCUITest driver's iOS automation without macOS and Xcode. See [Limitations and considerations](/introduction/limitations.md) for the underlying requirement.
 - **Cloud-hosted Appium**: A cloud device provider (see [Advantages of Appium](/introduction/advantages.md)) runs the Appium server on its own Mac infrastructure, so a team on Windows or Linux can still automate iOS devices without owning a Mac.
 
-In short: local automation is Android-only unless the host machine is a Mac; the cloud path is the way most Windows- or Linux-based teams reach iOS.
+In short: local automation is Android-only unless the host machine is a Mac; the cloud path is the way most Windows- or Linux-based teams reach iOS. Before installing on either host OS, check [Appium setup prerequisites](/appium-setup/prerequisites.md).

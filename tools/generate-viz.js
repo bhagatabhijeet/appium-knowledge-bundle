@@ -182,6 +182,7 @@ const READING_ORDER = [
   'driver-ecosystem/how-drivers-work',
   'driver-ecosystem/drivers',
   'driver-ecosystem/uiautomator2-vs-espresso',
+  'appium-setup/prerequisites',
 ];
 
 const concepts = buildConcepts(path.resolve(BUNDLE_ROOT));
