@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Appium supported client languages</title>
+  <desc id="description">Appium client libraries expose the WebDriver API in Java, JavaScript, Python, C#, PHP, and Ruby.</desc>
+  <rect width="1200" height="620" fill="#f5f7f2"/>
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="700" fill="#17251f">Languages supported by Appium clients</text>
+  <text x="600" y="92" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#50645a">One WebDriver API, exposed through language-specific client libraries.</text>
+
+  <rect x="390" y="130" width="420" height="110" rx="12" fill="#1e5d52"/>
+  <text x="600" y="175" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#ffffff">Appium client library</text>
+  <text x="600" y="209" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#dcefe8">W3C WebDriver API</text>
+
+  <path d="M600 240 V300" fill="none" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M190 300 H1010" fill="none" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M190 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M354 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M518 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M682 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M846 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M1010 300 V330" stroke="#1e5d52" stroke-width="6"/>
+  <path d="M190 320 l-12 18 h24 z M354 320 l-12 18 h24 z M518 320 l-12 18 h24 z M682 320 l-12 18 h24 z M846 320 l-12 18 h24 z M1010 320 l-12 18 h24 z" fill="#1e5d52"/>
+
+  <rect x="120" y="336" width="140" height="150" rx="10" fill="#dcefe8" stroke="#1e5d52" stroke-width="3"/>
+  <text x="190" y="380" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#17251f">Java</text>
+  <text x="190" y="406" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#50645a">java-client</text>
+
+  <rect x="284" y="336" width="140" height="150" rx="10" fill="#faf1c7" stroke="#8a6d1d" stroke-width="3"/>
+  <text x="354" y="374" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#4a3b0d">JavaScript</text>
+  <text x="354" y="400" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6b5615">webdriverio</text>
+
+  <rect x="448" y="336" width="140" height="150" rx="10" fill="#dbe7f5" stroke="#2b5a8a" stroke-width="3"/>
+  <text x="518" y="380" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#17324a">Python</text>
+  <text x="518" y="406" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#2b5a8a">Appium-Python-Client</text>
+
+  <rect x="612" y="336" width="140" height="150" rx="10" fill="#e8e4f3" stroke="#4e477b" stroke-width="3"/>
+  <text x="682" y="380" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#282445">C#</text>
+  <text x="682" y="406" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4e477b">Appium.WebDriver</text>
+
+  <rect x="776" y="336" width="140" height="150" rx="10" fill="#e0e6f6" stroke="#354e8a" stroke-width="3"/>
+  <text x="846" y="380" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#1c2a4d">PHP</text>
+  <text x="846" y="406" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#354e8a">appium-php-client</text>
+
+  <rect x="940" y="336" width="140" height="150" rx="10" fill="#f6dede" stroke="#9a2f2f" stroke-width="3"/>
+  <text x="1010" y="380" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#4c1717">Ruby</text>
+  <text x="1010" y="406" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9a2f2f">appium_lib</text>
+
+  <text x="600" y="560" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">Each client library sends the same W3C WebDriver commands to the Appium server.</text>
+</svg>

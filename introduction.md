@@ -3,6 +3,7 @@
 ## Topic map
 
 - [What is Appium?](#what-is-appium)
+- [Supported languages](#supported-languages)
 - [How Appium works: architecture overview](#how-appium-works-architecture-overview)
 - [Types of mobile apps](#types-of-mobile-apps)
 - [Advantages of Appium](#advantages-of-appium)
@@ -20,6 +21,21 @@ Appium is cross-platform. A test team can use the same WebDriver-based API acros
 Appium supports multiple programming languages because its clients expose the WebDriver API in language-specific libraries. Common choices include Java, JavaScript, Python, C#, PHP, and Ruby.
 
 For a minimal Python session example, see [`assets/code/basic-session.py`](assets/code/basic-session.py).
+
+## Supported languages
+
+Every Appium client library sends the same underlying W3C WebDriver commands, so a team can pick the language that fits its existing stack without changing how Appium behaves on the server or driver side.
+
+![Appium supported client languages](assets/images/appium-supported-languages.svg)
+
+| Language | Client library |
+| --- | --- |
+| Java | java-client |
+| JavaScript | webdriverio |
+| Python | Appium-Python-Client |
+| C# | Appium.WebDriver |
+| PHP | appium-php-client |
+| Ruby | appium_lib |
 
 ## How Appium works: architecture overview
 

@@ -12,6 +12,7 @@ Collect practical, structured knowledge for designing, configuring, running, and
 
 - [Appium Introduction](introduction.md)
 - [What is Appium?](introduction.md#what-is-appium)
+- [Supported languages](introduction.md#supported-languages)
 - [How Appium works: architecture overview](introduction.md#how-appium-works-architecture-overview)
 - [Types of mobile apps](introduction.md#types-of-mobile-apps)
 - [Advantages of Appium](introduction.md#advantages-of-appium)
