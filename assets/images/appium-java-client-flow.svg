@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title description">
+  <title id="title">Java client request flow through the Appium server</title>
+  <desc id="description">The Java client, using the java-client library, sends an HTTP POST request with a JSON body to the Appium server, which drives the session through the UiAutomator2 driver on Android or the XCUITest driver on iOS.</desc>
+  <rect width="1200" height="460" fill="#f5f7f2"/>
+
+  <rect x="40" y="150" width="230" height="160" rx="14" fill="#faf1c7" stroke="#8a6d1d" stroke-width="3"/>
+  <text x="155" y="205" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#4a3b0d">Java</text>
+  <text x="155" y="236" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#6b5615">+</text>
+  <text x="155" y="270" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#4a3b0d">java-client</text>
+
+  <text x="405" y="180" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#9a6a2f">{ JSON }</text>
+  <rect x="300" y="205" width="210" height="40" fill="none" stroke="#50645a" stroke-width="2"/>
+  <text x="405" y="231" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#17251f">HTTP Request</text>
+  <path d="M280 265 H505" stroke="#2b8fc4" stroke-width="10"/>
+  <path d="M505 250 l35 15 l-35 15 z" fill="#2b8fc4"/>
+
+  <rect x="520" y="150" width="230" height="160" rx="14" fill="#dcefe8" stroke="#1e5d52" stroke-width="3"/>
+  <text x="635" y="245" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#17251f">Appium Server</text>
+
+  <text x="900" y="120" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#17251f">UiAutomator2</text>
+  <path d="M760 220 V145 H1050" stroke="#2b8fc4" stroke-width="10" fill="none"/>
+  <path d="M1050 130 l35 15 l-35 15 z" fill="#2b8fc4"/>
+  <rect x="1080" y="55" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="1125" cy="90" r="24" fill="#3ddc84"/>
+  <text x="1125" y="96" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0c3d22">Android</text>
+
+  <text x="900" y="370" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#17251f">XCUITest</text>
+  <path d="M760 260 V335 H1050" stroke="#2b8fc4" stroke-width="10" fill="none"/>
+  <path d="M1050 320 l35 15 l-35 15 z" fill="#2b8fc4"/>
+  <rect x="1080" y="255" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="1125" cy="290" r="24" fill="#8e8e93"/>
+  <text x="1125" y="296" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#3a3a3c">iOS</text>
+
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">The java-client library turns a Java command into an HTTP POST request; the server routes it to the matching platform driver.</text>
+</svg>
