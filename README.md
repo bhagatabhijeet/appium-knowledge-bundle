@@ -1,5 +1,11 @@
 # Appium Knowledge Bundle
 
+<p align="center">
+  <a href="https://appium.io/">
+    <img alt="Appium" src="https://raw.githubusercontent.com/appium/appium/master/packages/appium/docs/overrides/assets/images/appium-logo-horiz.png" width="300">
+  </a>
+</p>
+
 ![Appium Knowledge Bundle](assets/images/appium-kb-banner.svg)
 
 A documentation-first knowledge bundle for Appium mobile automation. It collects practical, structured notes on designing, configuring, running, and troubleshooting Appium-based tests — organized as a topic map you can read end to end or jump into for a specific question.
