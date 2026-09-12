@@ -114,9 +114,9 @@ Appium is the clear winner on platform support (both Android and iOS) and on pro
 ## Limitations and considerations
 
 - **iOS environment requirements**: Local iOS automation requires macOS and the required Xcode tooling.
-- **Infrastructure management**: A local device lab is practical for a small number of devices, but scaling it requires additional hardware, maintenance, and operational resources. Cloud device providers can reduce this infrastructure burden.
+- **Infrastructure management**: A local Appium server lab is practical for a small setup, such as two or four devices connected to a single Mac or Windows machine. Scaling automation beyond that becomes a problem to manage locally; cloud device providers, where devices are managed separately and available on demand, reduce this infrastructure burden.
 - **Documentation depth**: Some Appium documentation and driver documentation can be technical, so teams should validate examples against the installed Appium and driver versions.
-- **Platform changes**: Changes in iOS, Xcode, Android, or a platform automation engine can introduce compatibility issues. Upgrade Appium, drivers, operating systems, and automation tooling together and check their release notes and issue trackers.
+- **Platform changes**: Changes in iOS, Xcode, Android, or a platform automation engine (such as XCTest) can potentially break Appium, though this is not frequent. Upgrade Appium, drivers, operating systems, and automation tooling together, and check the currently open issues on the [Appium GitHub issues page](https://github.com/appium/appium/issues) before and after upgrading.
 
 ## Next Topic
 
@@ -126,3 +126,4 @@ Next: [Drivers and platforms](index.md#topics)
 
 - [W3C WebDriver specification](https://www.w3.org/TR/webdriver/)
 - [Appium documentation](https://appium.io/docs/en/latest/)
+- [Appium GitHub issues](https://github.com/appium/appium/issues)
