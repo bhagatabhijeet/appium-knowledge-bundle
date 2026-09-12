@@ -24,7 +24,7 @@ For a minimal Python session example, see [`assets/code/basic-session.py`](asset
 
 ## Supported languages
 
-Every Appium client library sends the same underlying W3C WebDriver commands, so a team can pick the language that fits its existing stack without changing how Appium behaves on the server or driver side.
+Appium is built on Selenium, and Selenium already supports many programming languages. Appium inherits that same flexibility: every Appium client library sends the same underlying W3C WebDriver commands, so a team can pick the language that fits its existing stack without changing how Appium behaves on the server or driver side.
 
 ![Appium supported client languages](assets/images/appium-supported-languages.svg)
 
@@ -93,20 +93,23 @@ Hybrid apps combine native application screens with embedded web content, common
 - **Testing the actual application**: Tests generally do not require the application to be recompiled or modified specifically for automation.
 - **Broad functional testing fit**: Appium is well suited to end-to-end and functional testing across mobile platforms. Platform-native unit tests are usually a better fit for testing individual application units.
 - **Open-source ecosystem**: Appium has an active community and an ecosystem of platform drivers and client libraries.
+- **Backed by Sauce Labs**: Appium's development and support is backed by Sauce Labs, one of the most widely used cloud device testing platforms, which adds credibility to the tool. Cloud providers such as Sauce Labs and Perfecto Mobile support Appium as a mobile automation framework rather than competing with it.
 
 ## Appium compared with platform-specific tools
 
-Appium is often compared with tools that target one platform or one testing layer:
+Appium is often compared with other open-source tools that target one platform or one testing layer (cloud service providers like Sauce Labs and Perfecto Mobile are not included here, since they support Appium rather than compete with it):
 
-| Tool | Platform focus | Typical strength |
-| --- | --- | --- |
-| Appium | Android, iOS, and supported additional targets | Cross-platform functional testing |
-| XCTest | iOS | Native iOS unit and UI testing |
-| Robotium | Android | Android functional testing |
-| UI Automator | Android | Android UI and device interaction |
-| Espresso | Android | Fast, close-to-application Android UI testing |
+![Appium compared with platform-specific tools](assets/images/appium-tool-comparison.svg)
 
-Appium is a strong choice when the goal is cross-platform functional testing. XCTest and Espresso can be preferable for platform-native unit or UI tests where tight integration with the application code and fast execution are more important than a shared cross-platform API.
+| Tool | Platform focus | Language support | Typical strength |
+| --- | --- | --- | --- |
+| Appium | Android, iOS, and supported additional targets | Java, JavaScript, Python, C#, PHP, Ruby | Cross-platform functional testing |
+| XCTest | iOS | Objective-C, Swift | Native iOS unit and UI testing |
+| Robotium | Android | Java | Android functional testing |
+| UI Automator | Android | Java, Kotlin | Android UI and device interaction |
+| Espresso | Android | Java, Kotlin | Fast, close-to-application Android UI testing |
+
+Appium is the clear winner on platform support (both Android and iOS) and on programming language support, since the other tools are each tied to a single platform and a narrower set of languages. For unit testing, Appium is comparatively slower and less suitable; XCTest and Espresso are better suited there because of their tight, fast integration with the application code. For functional testing, Appium is the strongest overall choice because it covers both platforms, while XCTest, Robotium, and UI Automator can each handle functional testing but only within their single supported platform.
 
 ## Limitations and considerations
 
@@ -117,7 +120,7 @@ Appium is a strong choice when the goal is cross-platform functional testing. XC
 
 ## Next Topic
 
-Next Topic: [Appium architecture overview](#how-appium-works-architecture-overview)
+Next: [Drivers and platforms](index.md#topics)
 
 ## References
 

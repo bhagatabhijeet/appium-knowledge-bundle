@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title description">
+  <title id="title">Appium compared with platform-specific tools</title>
+  <desc id="description">Appium supports both iOS and Android, functional testing, and multiple languages, while XCTest, Robotium, UI Automator, and Espresso are each limited to one platform.</desc>
+  <rect width="1200" height="560" fill="#f5f7f2"/>
+  <text x="600" y="46" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="700" fill="#17251f">Let us compare</text>
+
+  <!-- criteria column -->
+  <rect x="20" y="70" width="180" height="60" fill="#1e5d52"/>
+  <rect x="20" y="130" width="180" height="90" fill="#eef1ec"/>
+  <rect x="20" y="220" width="180" height="90" fill="#eef1ec"/>
+  <rect x="20" y="310" width="180" height="90" fill="#eef1ec"/>
+  <text x="110" y="150" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Platform</text>
+  <text x="110" y="240" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Unit testing</text>
+  <text x="110" y="330" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Functional testing</text>
+  <text x="110" y="365" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Language</text>
+
+  <!-- column headers -->
+  <g font-family="sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <rect x="210" y="70" width="190" height="60" fill="#1e5d52"/>
+    <text x="305" y="106">Appium</text>
+    <rect x="410" y="70" width="190" height="60" fill="#4e477b"/>
+    <text x="505" y="106">XCTest</text>
+    <rect x="610" y="70" width="190" height="60" fill="#9a6a2f"/>
+    <text x="705" y="106">Robotium</text>
+    <rect x="810" y="70" width="190" height="60" fill="#354e8a"/>
+    <text x="905" y="106">UI Automator</text>
+    <rect x="1010" y="70" width="170" height="60" fill="#9a2f2f"/>
+    <text x="1095" y="106">Espresso</text>
+  </g>
+
+  <!-- row backgrounds -->
+  <rect x="210" y="130" width="970" height="90" fill="#ffffff"/>
+  <rect x="210" y="220" width="970" height="90" fill="#eef1ec"/>
+  <rect x="210" y="310" width="970" height="90" fill="#ffffff"/>
+
+  <!-- Platform row -->
+  <g font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="305" y="180" fill="#1e5d52" font-weight="700">iOS / Android</text>
+    <text x="505" y="180" fill="#9a2f2f">iOS</text>
+    <text x="705" y="180" fill="#9a2f2f">Android</text>
+    <text x="905" y="180" fill="#9a2f2f">Android</text>
+    <text x="1095" y="180" fill="#9a2f2f">Android</text>
+  </g>
+
+  <!-- Unit testing row -->
+  <g font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="305" y="270" fill="#9a2f2f">No</text>
+    <text x="505" y="270" fill="#1e5d52">Yes</text>
+    <text x="705" y="270" fill="#9a2f2f">No</text>
+    <text x="905" y="270" fill="#9a2f2f">No</text>
+    <text x="1095" y="270" fill="#1e5d52">Yes</text>
+  </g>
+
+  <!-- Functional testing row -->
+  <g font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="305" y="360" fill="#1e5d52">Yes</text>
+    <text x="505" y="360" fill="#1e5d52">Yes</text>
+    <text x="705" y="360" fill="#1e5d52">Yes</text>
+    <text x="905" y="360" fill="#1e5d52">Yes</text>
+    <text x="1095" y="360" fill="#9a2f2f">No</text>
+  </g>
+
+  <!-- Language row -->
+  <rect x="210" y="310" width="0" height="0"/>
+  <g font-family="sans-serif" font-size="16" text-anchor="middle">
+    <text x="305" y="405" fill="#1e5d52" font-weight="700">Multiple</text>
+    <text x="505" y="405" fill="#9a2f2f">Objective-C, Swift</text>
+    <text x="705" y="405" fill="#9a2f2f">Java</text>
+    <text x="905" y="405" fill="#9a2f2f">Java, Kotlin</text>
+    <text x="1095" y="405" fill="#9a2f2f">Java, Kotlin</text>
+  </g>
+
+  <!-- grid lines -->
+  <g stroke="#c9d2c9" stroke-width="1">
+    <line x1="20" y1="130" x2="1180" y2="130"/>
+    <line x1="20" y1="220" x2="1180" y2="220"/>
+    <line x1="20" y1="310" x2="1180" y2="310"/>
+    <line x1="20" y1="400" x2="1180" y2="400"/>
+    <line x1="400" y1="70" x2="400" y2="400"/>
+    <line x1="600" y1="70" x2="600" y2="400"/>
+    <line x1="800" y1="70" x2="800" y2="400"/>
+    <line x1="1000" y1="70" x2="1000" y2="400"/>
+  </g>
+
+  <text x="600" y="450" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">Appium is the only tool here that covers both mobile platforms and supports multiple languages.</text>
+</svg>
