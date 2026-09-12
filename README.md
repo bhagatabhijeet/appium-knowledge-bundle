@@ -38,3 +38,30 @@ This bundle follows the [Open Knowledge Format (OKF) v0.2](https://github.com/Go
 ## Status
 
 The Introduction and Appium ecosystem and drivers topics are complete. Remaining topics — desired capabilities, locators, gestures, test organization, troubleshooting, and reference material — are in progress; see [index.md](index.md) for the full topic map.
+
+## Reference links
+
+Appium:
+
+- [Appium 2.0 documentation](https://appium.github.io/appium/docs/en/2.0/)
+- [Appium GitHub organization](https://github.com/appium)
+- [Appium GitHub issues](https://github.com/appium/appium/issues) — report server defects here
+- [Appium Inspector](https://github.com/appium/appium-inspector)
+- [UiAutomator2 driver documentation](https://github.com/appium/appium-uiautomator2-driver) ([Android capabilities](https://github.com/appium/appium-uiautomator2-driver#capabilities))
+- [XCUITest driver documentation](https://github.com/appium/appium-xcuitest-driver) ([iOS capabilities](https://github.com/appium/appium-xcuitest-driver#capabilities))
+- [Java client](https://github.com/appium/java-client) — report client defects here
+- [Driver ecosystem](https://appium.github.io/appium/docs/en/2.0/ecosystem/)
+- [API Demos app](https://github.com/appium/appium/blob/master/packages/appium/sample-code/apps/ApiDemos-debug.apk) (Android sample app)
+- [UIKitCatalog app](https://github.com/appium/ios-uicatalog) (iOS sample app)
+- [Sauce Labs demo app](https://github.com/saucelabs/sample-app-mobile)
+- [iOS real-device setup](https://github.com/appium/appium-xcuitest-driver/blob/master/docs/getting-started/device-setup.md)
+- [Driver management commands (Extension CLI)](https://appium.github.io/appium/docs/en/2.0/cli/extensions/)
+- [Hybrid app automation (managing contexts)](https://appium.github.io/appium/docs/en/2.0/guides/context/)
+- [Appium Pro](https://appiumpro.com) — articles from Jonathan Lipps, Appium project lead
+
+Cucumber:
+
+- [Cucumber JUnit documentation](https://cucumber.io/docs/cucumber/api/?lang=java#junit)
+- [Cucumber TestNG samples](https://github.com/cucumber/cucumber-jvm/tree/main/cucumber-testng/src/test/java/io/cucumber/testng)
+- [Gherkin syntax and step organization](https://cucumber.io/docs/gherkin/)
+- [Cucumber expressions](https://github.com/cucumber/cucumber-expressions#readme)
