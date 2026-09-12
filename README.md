@@ -29,9 +29,12 @@ This bundle follows the [Open Knowledge Format (OKF) v0.2](https://github.com/Go
 - `index.md`: bundle-root entry point and topic map (carries the `okf_version` frontmatter)
 - `log.md`: chronological history of updates to the bundle
 - `introduction/`: the Introduction topic, one concept file per subtopic (what Appium is, supported languages, architecture, app types, advantages, tool comparison, limitations, references), plus its own `index.md`
+- `driver-ecosystem/`: the Appium ecosystem and drivers topic (ecosystem categories, how a driver works, the driver catalog), plus its own `index.md`
 - `assets/images/`: images used by knowledge topics
 - `assets/code/`: reusable reference code examples
+- `viz.html`: a self-contained, interactive graph viewer for this bundle — open it directly in a browser
+- `tools/generate-viz.js`: regenerates `viz.html` from the current concept files (`node tools/generate-viz.js`)
 
 ## Status
 
-The Introduction topic (what Appium is, its architecture, supported languages, advantages, tool comparisons, and limitations) is complete. Remaining topics — drivers and platforms, desired capabilities, locators, gestures, test organization, troubleshooting, and reference material — are in progress; see [index.md](index.md) for the full topic map.
+The Introduction and Appium ecosystem and drivers topics are complete. Remaining topics — desired capabilities, locators, gestures, test organization, troubleshooting, and reference material — are in progress; see [index.md](index.md) for the full topic map.
