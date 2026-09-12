@@ -24,6 +24,8 @@ Maintained by the Appium team:
 
 The Windows driver's Node.js part is Appium-maintained, but its server part (Microsoft's WinAppDriver executable) has not been updated since 2022.
 
+Choosing between the two Android drivers (UiAutomator2 and Espresso) depends on what you're automating: see [UiAutomator2 vs. Espresso](/driver-ecosystem/uiautomator2-vs-espresso.md).
+
 # Other (community-maintained) drivers
 
 Not maintained by the Appium team, but usable for platforms Appium's official drivers don't reach:

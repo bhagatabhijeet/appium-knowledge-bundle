@@ -18,3 +18,5 @@ Appium is often compared with other open-source tools that target one platform o
 | Espresso | Android | Java, Kotlin | Fast, close-to-application Android UI testing |
 
 Appium is the clear winner on platform support (both Android and iOS) and on programming language support, since the other tools are each tied to a single platform and a narrower set of languages. For unit testing, Appium is comparatively slower and less suitable; XCTest and Espresso are better suited there because of their tight, fast integration with the application code. For functional testing, Appium is the strongest overall choice because it covers both platforms, while XCTest, Robotium, and UI Automator can each handle functional testing but only within their single supported platform.
+
+For a closer look at UI Automator versus Espresso specifically — and how that maps onto choosing between Appium's own UiAutomator2 and Espresso drivers — see [UiAutomator2 vs. Espresso](/driver-ecosystem/uiautomator2-vs-espresso.md).

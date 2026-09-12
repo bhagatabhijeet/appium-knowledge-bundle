@@ -181,6 +181,7 @@ const READING_ORDER = [
   'driver-ecosystem/overview',
   'driver-ecosystem/how-drivers-work',
   'driver-ecosystem/drivers',
+  'driver-ecosystem/uiautomator2-vs-espresso',
 ];
 
 const concepts = buildConcepts(path.resolve(BUNDLE_ROOT));
