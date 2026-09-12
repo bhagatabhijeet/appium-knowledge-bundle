@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">Native, hybrid, and mobile web apps compared</title>
+  <desc id="description">Native apps have a longer development cycle but are fast, rich, and easiest to automate. Hybrid apps are quicker to build but slower, with a poorer user experience and the trickiest automation. Mobile web apps are quick to build, slower, with a poorer user experience, but easy to automate.</desc>
+  <rect width="1200" height="400" fill="#f5f7f2"/>
+  <text x="600" y="42" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#17251f">Native, hybrid, and mobile web apps at a glance</text>
+
+  <!-- criteria column -->
+  <rect x="20" y="66" width="230" height="54" fill="#1e5d52"/>
+  <rect x="20" y="120" width="230" height="70" fill="#eef1ec"/>
+  <rect x="20" y="190" width="230" height="70" fill="#eef1ec"/>
+  <rect x="20" y="260" width="230" height="70" fill="#eef1ec"/>
+  <rect x="20" y="330" width="230" height="70" fill="#eef1ec"/>
+  <text x="135" y="94" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Criteria</text>
+  <text x="135" y="160" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Development cycle</text>
+  <text x="135" y="230" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Speed</text>
+  <text x="135" y="300" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">User experience</text>
+  <text x="135" y="360" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#17251f">Automating with Appium</text>
+
+  <!-- column headers -->
+  <rect x="250" y="66" width="310" height="54" fill="#1e5d52"/>
+  <text x="405" y="100" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#ffffff">Native</text>
+  <rect x="560" y="66" width="310" height="54" fill="#4e477b"/>
+  <text x="715" y="100" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#ffffff">Hybrid</text>
+  <rect x="870" y="66" width="310" height="54" fill="#9a6a2f"/>
+  <text x="1025" y="100" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#ffffff">Mobile web</text>
+
+  <!-- row backgrounds -->
+  <rect x="250" y="120" width="930" height="70" fill="#ffffff"/>
+  <rect x="250" y="190" width="930" height="70" fill="#eef1ec"/>
+  <rect x="250" y="260" width="930" height="70" fill="#ffffff"/>
+  <rect x="250" y="330" width="930" height="70" fill="#eef1ec"/>
+
+  <g font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="405" y="160" fill="#9a2f2f">Longer</text>
+    <text x="715" y="160" fill="#1e5d52">Shorter</text>
+    <text x="1025" y="160" fill="#1e5d52">Shorter</text>
+
+    <text x="405" y="230" fill="#1e5d52">Fast</text>
+    <text x="715" y="230" fill="#9a2f2f">Slower</text>
+    <text x="1025" y="230" fill="#9a2f2f">Slower</text>
+
+    <text x="405" y="300" fill="#1e5d52">Rich</text>
+    <text x="715" y="300" fill="#9a2f2f">Poorer</text>
+    <text x="1025" y="300" fill="#9a2f2f">Poorer</text>
+
+    <text x="405" y="360" fill="#1e5d52">Easiest</text>
+    <text x="715" y="360" fill="#9a2f2f">Trickiest</text>
+    <text x="1025" y="360" fill="#1e5d52">Easy</text>
+  </g>
+
+  <g stroke="#c9d2c9" stroke-width="1">
+    <line x1="20" y1="120" x2="1180" y2="120"/>
+    <line x1="20" y1="190" x2="1180" y2="190"/>
+    <line x1="20" y1="260" x2="1180" y2="260"/>
+    <line x1="20" y1="330" x2="1180" y2="330"/>
+    <line x1="20" y1="400" x2="1180" y2="400"/>
+    <line x1="560" y1="66" x2="560" y2="400"/>
+    <line x1="870" y1="66" x2="870" y2="400"/>
+  </g>
+</svg>
