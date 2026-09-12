@@ -10,5 +10,6 @@ Overview of Appium: what it is, how it works, which languages it supports, the t
 * [Types of mobile apps](app-types.md) - Native, hybrid, and mobile web apps, and how each affects automation with Appium.
 * [Advantages of Appium](advantages.md) - Why teams choose Appium for cross-platform mobile test automation.
 * [Appium compared with platform-specific tools](tool-comparison.md) - How Appium stacks up against XCTest, Robotium, UI Automator, and Espresso.
+* [Ways to set up Appium](setup-options.md) - How the Appium host operating system limits which mobile platforms you can automate locally.
 * [Limitations and considerations](limitations.md) - Practical constraints and trade-offs to plan around when adopting Appium.
 * [References](references.md) - External sources referenced across this topic.

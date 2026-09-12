@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title description">
+  <title id="title">Ways to set up Appium: host OS versus target platform</title>
+  <desc id="description">A local Appium server on macOS can automate both Android and iOS devices. A local Appium server on Windows (or Linux) can automate Android devices but not iOS devices, because iOS automation requires macOS and Xcode.</desc>
+  <rect width="1200" height="460" fill="#f5f7f2"/>
+  <text x="600" y="42" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#17251f">Ways to set up Appium: host OS versus target platform</text>
+
+  <!-- macOS host -->
+  <rect x="120" y="80" width="260" height="80" rx="12" fill="#e8e4f3" stroke="#4e477b" stroke-width="3"/>
+  <text x="250" y="128" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#282445">Appium on macOS</text>
+
+  <path d="M195 160 V222" stroke="#2b8fc4" stroke-width="8" fill="none"/>
+  <path d="M183 222 L207 222 L195 240 Z" fill="#2b8fc4"/>
+  <rect x="130" y="245" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="175" cy="280" r="22" fill="#3ddc84"/>
+  <text x="175" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#17251f">Android</text>
+  <text x="175" y="415" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#1e5d52">&#10003; supported</text>
+
+  <path d="M305 160 V222" stroke="#2b8fc4" stroke-width="8" fill="none"/>
+  <path d="M293 222 L317 222 L305 240 Z" fill="#2b8fc4"/>
+  <rect x="280" y="245" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="325" cy="280" r="22" fill="#8e8e93"/>
+  <text x="325" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#17251f">iOS</text>
+  <text x="325" y="415" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#1e5d52">&#10003; supported</text>
+
+  <!-- Windows host -->
+  <rect x="820" y="80" width="260" height="80" rx="12" fill="#f3e6ce" stroke="#9a6a2f" stroke-width="3"/>
+  <text x="950" y="128" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#4c351a">Appium on Windows</text>
+
+  <path d="M895 160 V222" stroke="#2b8fc4" stroke-width="8" fill="none"/>
+  <path d="M883 222 L907 222 L895 240 Z" fill="#2b8fc4"/>
+  <rect x="830" y="245" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="875" cy="280" r="22" fill="#3ddc84"/>
+  <text x="875" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#17251f">Android</text>
+  <text x="875" y="415" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#1e5d52">&#10003; supported</text>
+
+  <path d="M1005 160 V222" stroke="#9a2f2f" stroke-width="8" fill="none" stroke-dasharray="10 8"/>
+  <path d="M993 222 L1017 222 L1005 240 Z" fill="#9a2f2f"/>
+  <rect x="980" y="245" width="90" height="150" rx="10" fill="#ffffff" stroke="#17251f" stroke-width="3"/>
+  <circle cx="1025" cy="280" r="22" fill="#8e8e93"/>
+  <text x="1025" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#17251f">iOS</text>
+  <text x="1025" y="415" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#9a2f2f">&#10007; not supported</text>
+
+  <text x="600" y="440" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#50645a">iOS automation needs macOS and Xcode, so a Windows (or Linux) Appium host can only reach Android — a cloud provider fills that gap.</text>
+</svg>
