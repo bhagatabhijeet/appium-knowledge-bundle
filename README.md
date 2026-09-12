@@ -22,14 +22,13 @@ Every topic in this bundle is meant to be concise, verifiable, and linked back t
 
 ## Specification
 
-This repository is being organized against the Google OKF 0.2 specification.
-
-The knowledge topics and source mappings are maintained at the repository root as the bundle is developed.
+This bundle follows the [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md): a directory tree of markdown concept files, each with a small YAML frontmatter block, organized into subdirectories by topic. The root [index.md](index.md) declares `okf_version: "0.2"` and lists the bundle's topics; [log.md](log.md) tracks the update history.
 
 ## Structure
 
-- `index.md`: knowledge bundle entry point and topic map
-- `introduction.md`: Appium Introduction topic
+- `index.md`: bundle-root entry point and topic map (carries the `okf_version` frontmatter)
+- `log.md`: chronological history of updates to the bundle
+- `introduction/`: the Introduction topic, one concept file per subtopic (what Appium is, supported languages, architecture, app types, advantages, tool comparison, limitations, references), plus its own `index.md`
 - `assets/images/`: images used by knowledge topics
 - `assets/code/`: reusable reference code examples
 

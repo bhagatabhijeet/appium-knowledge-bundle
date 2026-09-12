@@ -1,31 +1,22 @@
-# Appium Knowledge Bundle
+---
+okf_version: "0.2"
+---
 
-## Purpose
+# Appium Knowledge Bundle
 
 Collect practical, structured knowledge for designing, configuring, running, and troubleshooting Appium automation.
 
-## Specification target
+# Topics
 
-- Google OKF 0.2
+* [Introduction](introduction/) - Overview of Appium: what it is, how it works, supported languages, app types, advantages, tool comparisons, and limitations.
+* Drivers and platforms
+* Desired capabilities and session configuration
+* Locators and element interaction
+* Mobile gestures
+* Test organization
+* Troubleshooting
+* Reference material
 
-## Topics
-
-- [Appium Introduction](introduction.md)
-- [What is Appium?](introduction.md#what-is-appium)
-- [Supported languages](introduction.md#supported-languages)
-- [How Appium works: architecture overview](introduction.md#how-appium-works-architecture-overview)
-- [Types of mobile apps](introduction.md#types-of-mobile-apps)
-- [Advantages of Appium](introduction.md#advantages-of-appium)
-- [Appium compared with platform-specific tools](introduction.md#appium-compared-with-platform-specific-tools)
-- [Limitations and considerations](introduction.md#limitations-and-considerations)
-- Drivers and platforms
-- Desired capabilities and session configuration
-- Locators and element interaction
-- Mobile gestures
-- Test organization
-- Troubleshooting
-- Reference material
-
-## Contribution notes
+# Contribution notes
 
 Each topic should be concise, verifiable, and linked to an authoritative source where possible.
