@@ -30,12 +30,14 @@ Appium is built on Selenium, and Selenium already supports many programming lang
 
 | Language | Client library |
 | --- | --- |
-| Java | java-client |
-| JavaScript | webdriverio |
-| Python | Appium-Python-Client |
-| C# | Appium.WebDriver |
-| PHP | appium-php-client |
-| Ruby | appium_lib |
+| Java | [java-client](https://github.com/appium/java-client) |
+| JavaScript | [webdriverio](https://webdriver.io/) (maintained outside the Appium GitHub org) |
+| Python | [python-client](https://github.com/appium/python-client) |
+| C# | [dotnet-client](https://github.com/appium/dotnet-client) |
+| PHP | [php-client](https://github.com/appium-boneyard/php-client) (community-maintained, in the appium-boneyard org) |
+| Ruby | [ruby_lib](https://github.com/appium/ruby_lib) (`appium_lib` gem) |
+
+See the [client drivers ecosystem page](https://github.com/appium/appium/blob/master/packages/appium/docs/en/ecosystem/clients.md) in the appium/appium repo for the full, current list.
 
 ## How Appium works: architecture overview
 
@@ -49,6 +51,8 @@ Appium uses a client-server automation model:
 Underneath this model, the Appium server is a Node.js HTTP server that exposes a REST API, so it listens for HTTP requests the same way any other web server does. An automation framework integrates the matching client library as a regular dependency — for example, a Maven or Gradle dependency for the Java client, an npm package for the JavaScript client, or a pip package for the Python client. Each client library's job is to convert that language's commands into the matching HTTP request and send it to the server; for example, the Java client turns a Java command into an HTTP POST request. When a client creates a new session, the server returns a session ID, and the client includes that same session ID on every following request so the server knows which session it belongs to.
 
 Appium's client-server API is based on the Selenium WebDriver API, and the protocol history of the two projects tracks together. Selenium 3.x supported both the JSON Wire Protocol and the W3C WebDriver protocol; Selenium 4.x removed the JSON Wire Protocol completely and uses W3C WebDriver only, and all major browsers (Chrome, Firefox, and others) follow that same W3C standard. Because Appium is based on WebDriver, Appium 1.x likewise supported both protocols, and Appium 2.x switched to the W3C WebDriver protocol completely, matching Selenium 4.x. The W3C WebDriver protocol is based on the same client-server architecture described above; W3C means World Wide Web Consortium, the international community that develops standards for the web.
+
+See Appium's own explainers for more detail: [How Does Appium Work?](https://github.com/appium/appium/blob/master/packages/appium/docs/en/intro/appium.md) and [Appium Project History](https://github.com/appium/appium/blob/master/packages/appium/docs/en/intro/history.md), both in the appium/appium repo.
 
 ```mermaid
 flowchart LR
@@ -75,10 +79,10 @@ A session begins when the client sends a set of desired capabilities, such as wh
 
 Appium reaches the native automation technology on each platform through a dedicated driver:
 
-- **Android**: Appium drives the session with the UiAutomator2 driver, which talks to Android's UI Automator2 framework. As with other Appium 2 drivers, it is installed separately from the server. Android automation also relies on the Appium Settings companion app and ADB commands for tasks the UI Automator2 framework does not cover on its own.
-- **iOS**: Appium drives the session with the XCUITest driver, which talks to Apple's XCTest native framework. On the device side, the XCUITest driver communicates through a WebDriverAgent server, which bridges WebDriver commands to XCTest calls.
+- **Android**: Appium drives the session with the [UiAutomator2 driver](https://github.com/appium/appium-uiautomator2-driver), which talks to Android's UI Automator2 framework. As with other Appium 2 drivers, it is installed separately from the server. Android automation also relies on the [Appium Settings](https://github.com/appium/io.appium.settings) companion app and ADB commands for tasks the UI Automator2 framework does not cover on its own.
+- **iOS**: Appium drives the session with the [XCUITest driver](https://github.com/appium/appium-xcuitest-driver), which talks to Apple's XCTest native framework. On the device side, the XCUITest driver communicates through a [WebDriverAgent](https://github.com/appium/WebDriverAgent) server, which bridges WebDriver commands to XCTest calls.
 
-The native framework performs the requested command on the application and returns a response back through the driver to the Appium server, which relays it to the client. WebDriverAgent, the Appium Settings app, and ADB each get their own dedicated coverage in later topics.
+The native framework performs the requested command on the application and returns a response back through the driver to the Appium server, which relays it to the client. WebDriverAgent, the Appium Settings app, and ADB each get their own dedicated coverage in later topics. For the full, current driver list, see the [driver ecosystem page](https://github.com/appium/appium/blob/master/packages/appium/docs/en/ecosystem/drivers.md) in the appium/appium repo.
 
 ```mermaid
 flowchart LR
@@ -148,5 +152,6 @@ Next: [Drivers and platforms](index.md#topics)
 ## References
 
 - [W3C WebDriver specification](https://www.w3.org/TR/webdriver/)
-- [Appium documentation](https://appium.io/docs/en/latest/)
+- [Appium documentation](https://appium.io/docs/en/latest/) (built from the [appium/appium docs source](https://github.com/appium/appium/tree/master/packages/appium/docs/en))
 - [Appium GitHub issues](https://github.com/appium/appium/issues)
+- [Appium GitHub organization](https://github.com/appium) — server, drivers, client libraries, and related tooling
