@@ -43,8 +43,16 @@ WARN Appium Driver "uiautomator2" has 1 potential problem:
 WARN Appium   - Driver "uiautomator2" (package `appium-uiautomator2-driver`) may be incompatible with the current version of Appium (v2.0.1) due to its peer dependency on older Appium v^3.0.0-rc.2. Please ask the developer of `appium-uiautomator2-driver` to update the peer dependency on Appium to v2.0.1
 ```
 
-- The `DEP0190` notice is a Node.js runtime warning about how a dependency spawns a child process internally — it comes from Appium's own dependency tree, not from anything in your setup, and is safe to ignore.
-- The `uiautomator2` peer-dependency warning means the driver version installed declares a peer dependency on a newer Appium line (`3.0.0-rc.2`) than the `2.0.1` server installed here. Appium still loads the driver despite the mismatch, and sessions typically still work. If sessions actually fail to start later (not just this warning), revisit the version pairing — either upgrade the Appium server or pin an older `uiautomator2` driver version compatible with `2.0.1`.
+- The `DEP0190` notice is a Node.js runtime warning about how a dependency spawns a child process internally — it comes from Appium's own dependency tree, not from anything in your setup, is purely cosmetic, and isn't fixed by any version change.
+- The `uiautomator2` peer-dependency warning is fixable. It appears because `appium driver install uiautomator2` pulls the newest driver release, which targets Appium's upcoming 3.x prerelease line rather than 2.x. Two changes clear it:
+
+  ```sh
+  appium driver uninstall uiautomator2
+  appium driver install uiautomator2@4.2.9
+  npm install -g appium@2.19.0
+  ```
+
+  `4.2.9` is the newest `uiautomator2` driver release whose peer dependency (`^2.4.1 || ^3.0.0-beta.0`) still accepts an Appium 2.x server; `2.19.0` is the latest Appium 2.x release, satisfying that `≥2.4.1` floor (a plain `npm install -g appium@next` earlier in this bundle's setup steps lands on an older 2.x snapshot that doesn't). Check the current latest versions of each with `npm view appium-uiautomator2-driver versions` / `npm view appium versions` before reusing these exact numbers, since both move over time.
 
 # Configure a session in Appium Inspector
 
