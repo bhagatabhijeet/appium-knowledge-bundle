@@ -11,3 +11,6 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# Downloaded installers (used for screenshots, not source content)
+*.exe
