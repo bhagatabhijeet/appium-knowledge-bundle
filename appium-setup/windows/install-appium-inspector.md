@@ -21,6 +21,19 @@ appium
 
 Leave this running — it should print the server address (default `http://127.0.0.1:4723`) — and do the rest in Appium Inspector.
 
+## Known warnings on first start
+
+Two warnings are common on a fresh setup and don't block the server from starting:
+
+```
+(node:24692) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+WARN Appium Driver "uiautomator2" has 1 potential problem:
+WARN Appium   - Driver "uiautomator2" (package `appium-uiautomator2-driver`) may be incompatible with the current version of Appium (v2.0.1) due to its peer dependency on older Appium v^3.0.0-rc.2. Please ask the developer of `appium-uiautomator2-driver` to update the peer dependency on Appium to v2.0.1
+```
+
+- The `DEP0190` notice is a Node.js runtime warning about how a dependency spawns a child process internally — it comes from Appium's own dependency tree, not from anything in your setup, and is safe to ignore.
+- The `uiautomator2` peer-dependency warning means the driver version installed declares a peer dependency on a newer Appium line (`3.0.0-rc.2`) than the `2.0.1` server installed here. Appium still loads the driver despite the mismatch, and sessions typically still work. If sessions actually fail to start later (not just this warning), revisit the version pairing — either upgrade the Appium server or pin an older `uiautomator2` driver version compatible with `2.0.1`.
+
 # Configure a session in Appium Inspector
 
 1. Launch Appium Inspector.
