@@ -29,6 +29,32 @@ appium -v
 
 This should print a version number (e.g. `2.0.1`), confirming the `appium` command is on the PATH and working.
 
+# Explore the CLI
+
+```sh
+appium --help
+```
+
+```
+usage: index.js [-h] [-v] {server,driver,plugin,setup} ...
+
+A webdriver-compatible server that facilitates automation of web, mobile, and
+other types of apps across various platforms.
+
+positional arguments:
+  {server,driver,plugin,setup}
+    server              Start an Appium server
+    driver              Manage Appium drivers
+    plugin              Manage Appium plugins
+    setup               Batch install or uninstall Appium drivers and plugins
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+```
+
+The four subcommands cover everything in this setup flow: bare `appium` (an implicit `appium server`) starts the server, `appium driver ...` is [checking and installing drivers](#check-installed-drivers), `appium plugin ...` manages optional plugins, and `appium setup` batch-installs a driver/plugin set in one command. Append `--help` to any subcommand (e.g. `appium driver --help`) for its own options.
+
 # Find where the server was installed
 
 `npm install -g` puts Appium in npm's global `node_modules` folder and drops a shim (`appium.cmd` for Command Prompt, `appium.ps1` for PowerShell) on the PATH so the bare `appium` command resolves to it. The commands to find both locations differ slightly by shell.
