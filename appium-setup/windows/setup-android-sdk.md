@@ -57,6 +57,8 @@ Click **Apply**, accept the license agreement, and let the components install, t
    - `%ANDROID_HOME%\cmdline-tools\latest\bin`
 5. Click **OK** on every open dialog to save.
 
+If `%ANDROID_HOME%\cmdline-tools` doesn't exist when you get here, the **Android SDK Command-line Tools** component from the previous section wasn't actually installed — a common gap, since it's unchecked by default and easy to skip. Go back to the SDK Manager's **SDK Tools** tab, check it, and **Apply**; the folder appears once that finishes. In the meantime, skip that PATH entry — it only affects the optional `apkanalyzer.bat` check later, not `adb` or core Appium functionality.
+
 # Confirm the SDK folders
 
 Inside the SDK folder (`%ANDROID_HOME%`), these should all exist:
