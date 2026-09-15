@@ -9,12 +9,27 @@ Automating a real Android device with Appium (rather than an emulator) has one h
 
 # Enable Developer options and USB debugging
 
-1. On the device, open **Settings → About phone**, and tap **Build number** seven times. A toast confirms "You are now a developer."
-2. Go back to **Settings**, where a new **Developer options** menu now appears (usually under System, or directly in the main Settings list depending on the OEM's skin).
-3. Inside Developer options, enable **USB debugging**.
-4. Connect the device to the Windows machine with a USB cable. On the device, a prompt appears asking to allow USB debugging from this computer — accept it (optionally checking "Always allow from this computer" to skip the prompt on future connections).
+1. On the device, open **Settings → About phone**.
 
-Menu wording and screenshots vary by device — Android's own [Configure on-device developer options](https://developer.android.com/studio/debug/dev-options) guide has the official step-by-step with screenshots if the above doesn't match what you see.
+   ![Settings screen with About phone highlighted](/assets/images/enable-usb-debugging-step1-settings.png)
+
+2. Tap **Build number** seven times. A toast confirms "You are now a developer."
+
+   ![About phone screen with Build number entry](/assets/images/enable-usb-debugging-step2-build-number.png)
+
+3. Go back to **Settings**, where a new **Developer options** menu now appears (usually under System, or directly in the main Settings list depending on the OEM's skin).
+
+   ![Settings screen with Developer options now visible](/assets/images/enable-usb-debugging-step3-developer-options-entry.png)
+
+4. Inside Developer options, enable **USB debugging**.
+
+   ![Developer options screen with USB debugging toggled on](/assets/images/enable-usb-debugging-step4-toggle.png)
+
+5. Connect the device to the Windows machine with a USB cable. On the device, a prompt appears asking to allow USB debugging from this computer — accept it (optionally checking "Always allow from this computer" to skip the prompt on future connections).
+
+   ![Allow USB debugging confirmation dialog](/assets/images/enable-usb-debugging-step5-allow-dialog.png)
+
+The screens above are generic mockups illustrating the flow, not a specific device's actual UI — exact menu wording and layout vary by manufacturer. Android's own [Configure on-device developer options](https://developer.android.com/studio/debug/dev-options) guide has the official steps with real device screenshots if what you see doesn't match.
 
 # USB drivers
 
