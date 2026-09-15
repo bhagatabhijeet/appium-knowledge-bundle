@@ -60,6 +60,10 @@ C:\Users\<you>\AppData\Roaming\npm\appium.ps1
 
 `npm root -g` is the same in both shells and points at the folder holding the actual package code (under `node_modules\appium`); `where` (cmd) and `Get-Command` (PowerShell) instead resolve which shim on the PATH actually runs when you type `appium`.
 
+A quick visual check: open `node_modules\appium\lib` (under the `npm root -g` folder) in File Explorer. Seeing `main.js` there, alongside `appium.js`, `config.js`, and the rest of the server's source files, confirms the package installed correctly.
+
+![File Explorer showing node_modules\appium\lib with main.js present](/assets/images/install-appium-server-lib-folder.png)
+
 # Check installed drivers
 
 Appium 2.x ships the server only — platform drivers such as `uiautomator2` (Android) or `xcuitest` (iOS) are not bundled and must be installed separately.
