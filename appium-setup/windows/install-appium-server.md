@@ -116,3 +116,19 @@ appium driver list --installed
 ```
 
 The driver should now appear with its installed version, e.g. `- uiautomator2@3.x.x [installed]`, confirming it's ready to use.
+
+# Uninstall the server
+
+Since Appium was installed as a global npm package, removing it is a plain npm uninstall:
+
+```sh
+npm uninstall -g appium
+```
+
+This removes the `node_modules\appium` package and its PATH shims (`appium.cmd` / `appium.ps1`) from the location found earlier. It does not remove installed drivers or their SDKs (e.g. Android SDK) — uninstall a driver first with `appium driver uninstall <name>` if it should go too. Confirm removal with:
+
+```sh
+appium -v
+```
+
+which should now fail with a "not recognized" error (cmd) or "not recognized as a name of a cmdlet" error (PowerShell).
