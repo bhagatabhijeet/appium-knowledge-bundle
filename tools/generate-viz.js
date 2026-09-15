@@ -185,6 +185,7 @@ const READING_ORDER = [
   'appium-setup/prerequisites',
   'appium-setup/windows/install-nodejs',
   'appium-setup/windows/install-appium-server',
+  'appium-setup/windows/install-appium-inspector',
 ];
 
 const concepts = buildConcepts(path.resolve(BUNDLE_ROOT));
