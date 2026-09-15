@@ -184,6 +184,7 @@ const READING_ORDER = [
   'driver-ecosystem/uiautomator2-vs-espresso',
   'appium-setup/prerequisites',
   'appium-setup/windows/install-nodejs',
+  'appium-setup/windows/install-appium-server',
 ];
 
 const concepts = buildConcepts(path.resolve(BUNDLE_ROOT));
