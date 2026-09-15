@@ -8,3 +8,4 @@ Step-by-step Appium server setup on Windows, via the command line.
 * [Install the Appium server (npm)](install-appium-server.md) - Installing the Appium 2.x server as a global npm package, and verifying the install.
 * [Set up the Android SDK and JDK on Windows](setup-android-sdk.md) - Installing Android Studio (or the SDK alone), setting ANDROID_HOME and JAVA_HOME, and verifying with appium driver doctor.
 * [Install Appium Inspector on Windows](install-appium-inspector.md) - Installing the Appium Inspector desktop app, and using it to verify the server and driver setup end-to-end.
+* [Set up a real Android device on Windows](setup-real-device.md) - Enabling USB debugging on a real Android device, installing USB drivers if needed, and verifying the connection with Vysor screen mirroring.

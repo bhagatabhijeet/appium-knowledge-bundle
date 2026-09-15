@@ -187,6 +187,7 @@ const READING_ORDER = [
   'appium-setup/windows/install-appium-server',
   'appium-setup/windows/setup-android-sdk',
   'appium-setup/windows/install-appium-inspector',
+  'appium-setup/windows/setup-real-device',
 ];
 
 const concepts = buildConcepts(path.resolve(BUNDLE_ROOT));
