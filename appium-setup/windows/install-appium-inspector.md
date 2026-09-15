@@ -9,7 +9,19 @@ With the [Appium server installed](install-appium-server.md) and at least one dr
 
 # Download and install
 
-Appium Inspector isn't installed via npm; it's a separate desktop app. Go to the [Appium Inspector releases page](https://github.com/appium/appium-inspector/releases) on GitHub and download the latest Windows installer (a `.exe` asset, typically named like `Appium-Inspector-Setup-*.exe`). Run the installer and accept the defaults.
+Appium Inspector isn't installed via npm; it's a separate desktop app. Go to the [Appium Inspector releases page](https://github.com/appium/appium-inspector/releases) on GitHub and download the latest Windows installer (a `.exe` asset, typically named like `Appium-Inspector-*-win-x64.exe`). Run the installer and step through the wizard:
+
+1. **Choose Installation Options** — install for all users, or just the current user (the simpler choice on a personal machine, no admin prompt needed).
+
+   ![Appium Inspector installer: Choose Installation Options screen](/assets/images/install-appium-inspector-wizard-screen1.png)
+
+2. **Choose Install Location** — the default per-user path under `AppData\Local\Programs\Appium Inspector` is fine; change it only if you have a reason to.
+
+   ![Appium Inspector installer: Choose Install Location screen](/assets/images/install-appium-inspector-wizard-screen2.png)
+
+3. Select **Install**, then **Finish** once setup completes.
+
+   ![Appium Inspector installer: Completing Appium Inspector Setup screen](/assets/images/install-appium-inspector-wizard-screen3.png)
 
 # Start the Appium server
 
